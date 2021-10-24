@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/weight_card"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardElevation = "1dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="40dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <TextView
+                android:id="@+id/title_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/catamaran_bold"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/title_weight"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_weight"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="@string/placeholder_weight"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:textSize="200sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardElevation = "1dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="40dp"
+        android:layout_below="@+id/weight_card"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/title_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                >
+
+                <TextView
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/catamaran_bold"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="0.7"
+                    android:layout_marginTop="-8dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="15dp"
+                    android:text="Weight \nLost"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/total_lost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="150"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/title_stat"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textStyle="bold"
+
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_card2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardElevation = "1dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="40dp"
+        android:layout_below="@+id/stats_card"
+        android:layout_marginTop="-20dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/days_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                >
+
+                <TextView
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/catamaran_bold"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="0.7"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="15dp"
+                    android:text="Total \nDays"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/days_passed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="150"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/days_stat"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textStyle="bold"
+
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_card3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardElevation = "1dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="40dp"
+        android:layout_below="@+id/stats_card2"
+        android:layout_marginTop="-20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/pace_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                >
+
+                <TextView
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/catamaran_bold"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="0.7"
+                    android:layout_marginTop="-8dp"
+
+                    android:paddingLeft="18dp"
+                    android:paddingRight="15dp"
+                    android:text="Avg Loss per Day"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/avg_pace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="150"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/pace_stat"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textStyle="bold"
+
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
+</ScrollView>
